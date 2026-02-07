@@ -1,233 +1,618 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LATARG — soluciones empresariales en América Latina. Consultoría, tecnología y desarrollo de negocios.">
-  <meta name="keywords" content="LATARG, Latin America, consultoría, negocios, tecnología, Argentina">
-  <meta name="author" content="LATARG">
-  <meta property="og:title" content="LATARG — Soluciones Empresariales">
-  <meta property="og:description" content="Consultoría, tecnología y desarrollo de negocios en América Latina.">
+  <meta name="description" content="Latam Agropartners — Premium wholesale agricultural products from Latin America. Soybeans, coffee, grains, legumes, beef and more. Direct sourcing, worldwide delivery.">
+  <meta name="keywords" content="wholesale agricultural products, Latin America, soybeans, coffee beans, grains, chickpeas, beef, export, import, LATAM trade">
+  <meta name="author" content="Latam Agropartners">
+  <meta property="og:title" content="Latam Agropartners — Premium Agricultural Products from Latin America">
+  <meta property="og:description" content="Wholesale sourcing of grains, legumes, coffee, cocoa, and beef from Latin America to the world.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://latarg.com">
-  <title>LATARG — Soluciones Empresariales</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌎</text></svg>">
+  <title>Latam Agropartners — Premium Agricultural Products from Latin America</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">LAT<span>ARG</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <a href="#" class="logo">
+        <span class="logo-latam">LATAM</span>
+        <span class="logo-agro">AGROPARTNERS</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="inicio">
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <h1>Impulsamos tu negocio<br>en <span class="highlight">América Latina</span></h1>
-      <p class="hero-subtitle">Consultoría estratégica, soluciones tecnológicas y desarrollo de negocios para empresas que buscan crecer en la región.</p>
-      <div class="hero-buttons">
-        <a href="#contacto" class="btn btn-primary">Contáctanos</a>
-        <a href="#servicios" class="btn btn-outline">Nuestros Servicios</a>
+      <p class="hero-tag">Established Wholesale Supplier</p>
+      <h1>Premium Agricultural<br>Products from <span class="text-accent">Latin America</span></h1>
+      <p class="hero-desc">Direct sourcing of grains, legumes, coffee, cocoa, and premium beef — delivered to importers and manufacturers worldwide.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-accent">Explore Products</a>
+        <a href="#contact" class="btn btn-outline-light">Request a Quote</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-number" data-target="10">0</span><span class="trust-plus">+</span>
+        <span class="trust-label">Years in Business</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-number" data-target="30">0</span><span class="trust-plus">+</span>
+        <span class="trust-label">Product Lines</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-number" data-target="15">0</span><span class="trust-plus">+</span>
+        <span class="trust-label">Source Countries</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <span class="trust-label" style="font-size:1.1rem;font-weight:600;color:var(--dark);">Worldwide Delivery</span>
+        <span class="trust-label">Europe, Gulf States & Beyond</span>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="section" id="nosotros">
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">Sobre Nosotros</h2>
-      <p class="section-subtitle">Más de una década conectando empresas con oportunidades en la región</p>
       <div class="about-grid">
-        <div class="about-text">
-          <p>En <strong>LATARG</strong> somos especialistas en facilitar la expansión y el crecimiento empresarial en América Latina. Nuestro equipo multidisciplinario combina experiencia local con visión global para ofrecer soluciones a medida.</p>
-          <p>Trabajamos con empresas de todos los tamaños, desde startups hasta corporaciones multinacionales, ayudándolas a navegar los desafíos únicos del mercado latinoamericano.</p>
+        <div class="about-image animate-up">
+          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80" alt="Agricultural landscape" loading="lazy">
         </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <span class="stat-number">150+</span>
-            <span class="stat-label">Proyectos Realizados</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">12</span>
-            <span class="stat-label">Países</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">98%</span>
-            <span class="stat-label">Clientes Satisfechos</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Años de Experiencia</span>
+        <div class="about-text animate-up">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-heading">Connecting Latin American Agriculture with the World</h2>
+          <p>For over a decade, <strong>Latam Agropartners</strong> has been a trusted bridge between Latin America's rich agricultural regions and global markets. We specialize in wholesale sourcing and export of premium grains, legumes, coffee, cocoa, and beef products.</p>
+          <p>Our deep-rooted relationships with producers across Argentina, Brazil, Colombia, Bolivia, and other LATAM countries allow us to offer competitive pricing, consistent quality, and reliable supply chains.</p>
+          <div class="about-legal">
+            <strong>LATAGRO LLC</strong><br>
+            8 The Green, STE B<br>
+            Dover, DE 19901, United States
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="section section-alt" id="servicios">
+  <!-- ========== PRODUCTS ========== -->
+  <section class="section section-dark" id="products">
     <div class="container">
-      <h2 class="section-title">Nuestros Servicios</h2>
-      <p class="section-subtitle">Soluciones integrales para cada etapa de tu crecimiento</p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 20V10"/>
-              <path d="M18 20V4"/>
-              <path d="M6 20v-4"/>
-            </svg>
+      <div class="section-header animate-up">
+        <span class="section-tag section-tag-light">Our Products</span>
+        <h2 class="section-heading text-white">What We Supply</h2>
+        <p class="section-desc text-muted">From the fertile lands of Latin America — quality-certified agricultural products ready for global markets.</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="product-tabs animate-up">
+        <button class="tab-btn active" data-category="grains">Grains &amp; Cereals</button>
+        <button class="tab-btn" data-category="legumes">Legumes &amp; Seeds</button>
+        <button class="tab-btn" data-category="coffee">Coffee &amp; Cocoa</button>
+        <button class="tab-btn" data-category="meat">Beef Products</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- === GRAINS === -->
+        <div class="product-card animate-up" data-category="grains">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1599709877852-d30ad2bd43f1?auto=format&fit=crop&w=600&q=80')">
+            <span class="product-badge">Top Export</span>
           </div>
-          <h3>Consultoría Estratégica</h3>
-          <p>Análisis de mercado, planes de expansión y estrategias de entrada para la región latinoamericana.</p>
+          <div class="product-info">
+            <h3>Soybeans</h3>
+            <p>Premium soybean grains — the largest agricultural export of the region.</p>
+            <button class="btn btn-product" onclick="openQuote('Soybeans')">Request Quote</button>
+          </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2"/>
-              <path d="M8 21h8"/>
-              <path d="M12 17v4"/>
-            </svg>
+
+        <div class="product-card animate-up" data-category="grains">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Corn (Maize)</h3>
+            <p>High-quality corn kernels sourced from leading LATAM producers.</p>
+            <button class="btn btn-product" onclick="openQuote('Corn (Maize)')">Request Quote</button>
           </div>
-          <h3>Soluciones Tecnológicas</h3>
-          <p>Desarrollo de software, integración de sistemas y transformación digital adaptada al mercado local.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
+
+        <div class="product-card animate-up" data-category="grains">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Wheat</h3>
+            <p>Argentine and Brazilian wheat grains for milling and food production.</p>
+            <button class="btn btn-product" onclick="openQuote('Wheat')">Request Quote</button>
           </div>
-          <h3>Desarrollo de Negocios</h3>
-          <p>Identificación de socios, networking empresarial y gestión de relaciones comerciales en LATAM.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M2 12h20"/>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-            </svg>
+
+        <div class="product-card animate-up" data-category="grains">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Rice</h3>
+            <p>Long and medium grain rice varieties from South American paddies.</p>
+            <button class="btn btn-product" onclick="openQuote('Rice')">Request Quote</button>
           </div>
-          <h3>Expansión Regional</h3>
-          <p>Acompañamiento integral para establecer operaciones en nuevos mercados de América Latina.</p>
+        </div>
+
+        <div class="product-card animate-up" data-category="grains">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Oats</h3>
+            <p>Whole and processed oat grains for food industry applications.</p>
+            <button class="btn btn-product" onclick="openQuote('Oats')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="grains">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1631209121750-a9f656d26a66?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Sorghum</h3>
+            <p>Versatile sorghum grain for feed, food, and industrial use.</p>
+            <button class="btn btn-product" onclick="openQuote('Sorghum')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="grains">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1558517259-165ae4b10f7f?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Millet / Triticale</h3>
+            <p>Specialty grains for diverse market needs.</p>
+            <button class="btn btn-product" onclick="openQuote('Millet / Triticale')">Request Quote</button>
+          </div>
+        </div>
+
+        <!-- === LEGUMES & SEEDS === -->
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1551462147-ff29053bfc14?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Beans</h3>
+            <p>Multiple varieties — kidney, black, pinto, and more.</p>
+            <button class="btn btn-product" onclick="openQuote('Beans (various)')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1515543904823-4873b9af2a3f?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Chickpeas</h3>
+            <p>Premium caliber chickpeas, ideal for food processing and retail.</p>
+            <button class="btn btn-product" onclick="openQuote('Chickpeas')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Green Peas</h3>
+            <p>Dried green and yellow peas for worldwide distribution.</p>
+            <button class="btn btn-product" onclick="openQuote('Peas')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Lentils</h3>
+            <p>Red, green, and brown lentil varieties in bulk quantities.</p>
+            <button class="btn btn-product" onclick="openQuote('Lentils')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1609501676725-7186f017a4b7?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Lupins</h3>
+            <p>High-protein lupin beans for food and feed industries.</p>
+            <button class="btn btn-product" onclick="openQuote('Lupins')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1564894809611-1742fc40ed80?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Lima Beans</h3>
+            <p>Quality fava and lima beans from South American producers.</p>
+            <button class="btn btn-product" onclick="openQuote('Lima Beans (Fava)')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1511690743698-d9d18f7e20b1?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Chia Seeds</h3>
+            <p>Organic and conventional chia seeds from Argentina and Bolivia.</p>
+            <button class="btn btn-product" onclick="openQuote('Chia Seeds')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Flax Seeds</h3>
+            <p>Golden and brown flaxseeds — rich in omega-3 fatty acids.</p>
+            <button class="btn btn-product" onclick="openQuote('Flax Seeds')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1541990931902-a9da124a1a15?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Sesame Seeds</h3>
+            <p>White and black sesame seeds for culinary and oil production.</p>
+            <button class="btn btn-product" onclick="openQuote('Sesame Seeds')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="legumes" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1622484212850-eb596d769edc?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Pumpkin Seeds</h3>
+            <p>Raw and processed pumpkin seeds (pepitas) for snack and food industry.</p>
+            <button class="btn btn-product" onclick="openQuote('Pumpkin Seeds')">Request Quote</button>
+          </div>
+        </div>
+
+        <!-- === COFFEE & COCOA === -->
+        <div class="product-card animate-up" data-category="coffee" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=600&q=80')">
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <h3>Green Coffee Beans</h3>
+            <p>Arabica and Robusta green beans from Brazil and Colombia.</p>
+            <button class="btn btn-product" onclick="openQuote('Green Coffee Beans')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="coffee" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Roasted / Ground Coffee</h3>
+            <p>Specialty and commercial-grade roasted coffee for global markets.</p>
+            <button class="btn btn-product" onclick="openQuote('Roasted / Ground Coffee')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="coffee" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1610611424854-5e07b4937185?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Cocoa Beans</h3>
+            <p>Fine-flavor and bulk cocoa beans from LATAM origins.</p>
+            <button class="btn btn-product" onclick="openQuote('Cocoa Beans')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="coffee" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Cocoa Powder / Butter</h3>
+            <p>Processed cocoa products for confectionery and food manufacturing.</p>
+            <button class="btn btn-product" onclick="openQuote('Cocoa Powder / Butter')">Request Quote</button>
+          </div>
+        </div>
+
+        <!-- === BEEF === -->
+        <div class="product-card animate-up" data-category="meat" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1588347818036-558601350947?auto=format&fit=crop&w=600&q=80')">
+            <span class="product-badge">Premium</span>
+          </div>
+          <div class="product-info">
+            <h3>Fresh / Chilled Beef</h3>
+            <p>Grass-fed premium beef cuts — fresh and chilled for demanding markets.</p>
+            <button class="btn btn-product" onclick="openQuote('Fresh / Chilled Beef')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="meat" style="display:none">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Frozen Beef</h3>
+            <p>IQF and block-frozen beef products for industrial and retail segments.</p>
+            <button class="btn btn-product" onclick="openQuote('Frozen Beef')">Request Quote</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-header animate-up">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-heading">Your Trusted Partner in LATAM Trade</h2>
+      </div>
+      <div class="advantages-grid">
+        <div class="adv-card animate-up">
+          <div class="adv-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Direct Sourcing</h3>
+          <p>We work directly with producers and cooperatives across Latin America, cutting out middlemen and ensuring the best pricing.</p>
+        </div>
+        <div class="adv-card animate-up">
+          <div class="adv-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Quality Certified</h3>
+          <p>All products come with full documentation — phytosanitary certificates, lab reports, and quality inspection records available on request.</p>
+        </div>
+        <div class="adv-card animate-up">
+          <div class="adv-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Flexible Logistics</h3>
+          <p>FOB, CIF, or door-to-door — we handle complex logistics across ocean freight, coordinating shipments to any destination worldwide.</p>
+        </div>
+        <div class="adv-card animate-up">
+          <div class="adv-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Competitive Pricing</h3>
+          <p>Leveraging long-term supplier relationships and volume purchasing, we offer highly competitive rates for wholesale buyers.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section" id="contacto">
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="container cta-content">
+      <h2 class="animate-up">Ready to Source Premium Products<br>from Latin America?</h2>
+      <p class="animate-up">Tell us what you need — we'll provide pricing, certificates, and logistics within 24 hours.</p>
+      <div class="animate-up">
+        <a href="#contact" class="btn btn-accent btn-lg">Get a Free Quote</a>
+        <a href="https://wa.me/5491162045579?text=Hello%2C%20I%27m%20interested%20in%20your%20agricultural%20products.%20Could%20you%20provide%20more%20information%3F" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-light" id="contact">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-subtitle">Estamos listos para ayudarte a crecer</p>
+      <div class="section-header animate-up">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-heading">Request a Quote</h2>
+        <p class="section-desc">Fill in the form below and our team will respond within 24 business hours.</p>
+      </div>
       <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            <div>
-              <strong>Email</strong>
-              <p>info@latarg.com</p>
+        <div class="contact-info-col animate-up">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:agropartnerslatam@gmail.com">agropartnerslatam@gmail.com</a>
+              </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-            <div>
-              <strong>Ubicación</strong>
-              <p>Buenos Aires, Argentina</p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <a href="https://wa.me/5491162045579">+54 9 11 6204-5579</a>
+              </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <polyline points="12 6 12 12 16 14"/>
-            </svg>
-            <div>
-              <strong>Horario</strong>
-              <p>Lun - Vie: 9:00 - 18:00</p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Office</strong>
+                <span>8 The Green, STE B<br>Dover, DE 19901, USA</span>
+              </div>
             </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" placeholder="Nombre completo" required>
+        <form class="contact-form animate-up" id="contactForm" action="https://formsubmit.co/agropartnerslatam@gmail.com" method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New inquiry from latarg.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://latarg.com#contact">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company *</label>
+              <input type="text" id="company" name="Company" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="Phone">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="country">Country *</label>
+              <input type="text" id="country" name="Country" required>
+            </div>
+            <div class="form-group">
+              <label for="product-interest">Product of Interest</label>
+              <select id="product-interest" name="Product">
+                <option value="">Select a product...</option>
+                <optgroup label="Grains & Cereals">
+                  <option>Soybeans</option><option>Corn (Maize)</option><option>Wheat</option>
+                  <option>Rice</option><option>Oats</option><option>Sorghum</option><option>Millet / Triticale</option>
+                </optgroup>
+                <optgroup label="Legumes & Seeds">
+                  <option>Beans</option><option>Chickpeas</option><option>Peas</option><option>Lentils</option>
+                  <option>Lupins</option><option>Lima Beans</option><option>Chia Seeds</option><option>Flax Seeds</option>
+                  <option>Sesame Seeds</option><option>Pumpkin Seeds</option>
+                </optgroup>
+                <optgroup label="Coffee & Cocoa">
+                  <option>Green Coffee Beans</option><option>Roasted / Ground Coffee</option>
+                  <option>Cocoa Beans</option><option>Cocoa Powder / Butter</option>
+                </optgroup>
+                <optgroup label="Beef Products">
+                  <option>Fresh / Chilled Beef</option><option>Frozen Beef</option>
+                </optgroup>
+              </select>
+            </div>
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Email" required>
+            <label for="message">Message *</label>
+            <textarea id="message" name="Message" rows="4" required placeholder="Please describe your requirements: product, volume, delivery terms, certifications needed..."></textarea>
           </div>
-          <div class="form-group">
-            <input type="text" placeholder="Asunto">
-          </div>
-          <div class="form-group">
-            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+          <button type="submit" class="btn btn-accent btn-full">Send Inquiry</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
+      <div class="footer-top">
         <div class="footer-brand">
-          <a href="#" class="logo">LAT<span>ARG</span></a>
-          <p>Conectando empresas con oportunidades en América Latina.</p>
+          <a href="#" class="logo">
+            <span class="logo-latam">LATAM</span>
+            <span class="logo-agro">AGROPARTNERS</span>
+          </a>
+          <p>Premium agricultural products from Latin America — sourced directly, delivered globally.</p>
         </div>
-        <div class="footer-links">
-          <a href="#inicio">Inicio</a>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#contacto">Contacto</a>
+        <div class="footer-nav">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#why-us">Why Choose Us</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <h4>Products</h4>
+            <a href="#products" onclick="setTimeout(()=>switchTab('grains'),300)">Grains &amp; Cereals</a>
+            <a href="#products" onclick="setTimeout(()=>switchTab('legumes'),300)">Legumes &amp; Seeds</a>
+            <a href="#products" onclick="setTimeout(()=>switchTab('coffee'),300)">Coffee &amp; Cocoa</a>
+            <a href="#products" onclick="setTimeout(()=>switchTab('meat'),300)">Beef Products</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="mailto:agropartnerslatam@gmail.com">agropartnerslatam@gmail.com</a>
+            <a href="https://wa.me/5491162045579">+54 9 11 6204-5579</a>
+            <a href="#">Dover, DE, USA</a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 LATARG. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Latam Agropartners (LATAGRO LLC). All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <!-- ========== QUOTE MODAL ========== -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeQuote()" aria-label="Close">&times;</button>
+      <h3>Request Quote &amp; Certificates</h3>
+      <p class="modal-product" id="modalProduct"></p>
+      <form id="quoteForm" action="https://formsubmit.co/agropartnerslatam@gmail.com" method="POST">
+        <input type="hidden" name="_subject" id="quoteSubject" value="">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://latarg.com#products">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="Product" id="quoteProductField" value="">
+
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" name="Name" required></div>
+          <div class="form-group"><label>Company *</label><input type="text" name="Company" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email *</label><input type="email" name="Email" required></div>
+          <div class="form-group"><label>Phone</label><input type="tel" name="Phone"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Country *</label><input type="text" name="Country" required></div>
+          <div class="form-group"><label>Volume / Quantity</label><input type="text" name="Volume" placeholder="e.g., 500 MT"></div>
+        </div>
+        <div class="form-group modal-checks">
+          <label class="checkbox-label"><input type="checkbox" name="Request_Type[]" value="Pricing" checked> Request pricing</label>
+          <label class="checkbox-label"><input type="checkbox" name="Request_Type[]" value="Certificates"> Request quality certificates</label>
+          <label class="checkbox-label"><input type="checkbox" name="Request_Type[]" value="Sample"> Request sample</label>
+        </div>
+        <div class="form-group">
+          <label>Additional Notes</label>
+          <textarea name="Notes" rows="3" placeholder="Delivery terms, packaging requirements, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent btn-full">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== WHATSAPP WIDGET ========== -->
+  <a href="https://wa.me/5491162045579?text=Hello%2C%20I%27m%20interested%20in%20your%20agricultural%20products.%20Could%20you%20provide%20more%20information%3F" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ========== SCRIPTS ========== -->
   <script>
-    // Navbar scroll effect
+    /* --- Navbar scroll --- */
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
     });
 
-    // Mobile nav toggle
+    /* --- Mobile nav --- */
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
     navToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
       navToggle.classList.toggle('active');
     });
-
-    // Close mobile menu on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
@@ -235,38 +620,73 @@
       });
     });
 
-    // Smooth scroll
+    /* --- Smooth scroll --- */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        const t = document.querySelector(this.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
 
-    // Form submit handler
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
-      this.reset();
+    /* --- Product tabs --- */
+    function switchTab(category) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.category === category));
+      document.querySelectorAll('.product-card').forEach(card => {
+        card.style.display = card.dataset.category === category ? '' : 'none';
+      });
+    }
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => switchTab(btn.dataset.category));
     });
 
-    // Intersection Observer for animations
-    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    /* --- Quote modal --- */
+    function openQuote(product) {
+      document.getElementById('modalProduct').textContent = product;
+      document.getElementById('quoteProductField').value = product;
+      document.getElementById('quoteSubject').value = 'Quote Request: ' + product + ' — latarg.com';
+      document.getElementById('quoteModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeQuote() {
+      document.getElementById('quoteModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('quoteModal').addEventListener('click', function(e) {
+      if (e.target === this) closeQuote();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeQuote();
+    });
+
+    /* --- Animate on scroll --- */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
       });
-    }, observerOptions);
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));
 
-    document.querySelectorAll('.service-card, .stat-card, .about-text, .contact-info, .contact-form').forEach(el => {
-      el.classList.add('animate');
-      observer.observe(el);
-    });
+    /* --- Counter animation --- */
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.target);
+          let current = 0;
+          const step = Math.ceil(target / 40);
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) { current = target; clearInterval(timer); }
+            el.textContent = current;
+          }, 40);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.trust-number').forEach(el => counterObserver.observe(el));
   </script>
 
 </body>
