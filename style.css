@@ -1014,7 +1014,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .hero-scroll { display: none; }
 
   .trust-divider { display: none; }
-  .trust-grid { gap: 24px; }
+  .trust-grid { gap: 8px 16px; }
+  .trust-item:not(:last-child) { flex: 1; min-width: 0; }
+  .trust-item:last-child { flex-basis: 100%; padding-top: 12px; border-top: 1px solid rgba(27,58,45,.12); }
 
   .section { padding: 70px 0; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -1051,12 +1053,14 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .section-desc { font-size: .95rem; }
   .modal-checks { flex-direction: column; gap: 10px; }
   .cta-content h2 { font-size: 1.6rem; }
-  .trust-number { font-size: 2rem; }
-  .trust-plus { font-size: 1.5rem; }
+  .trust-number { font-size: 1.8rem; }
+  .trust-plus { font-size: 1.3rem; }
+  .trust-label { font-size: .75rem; }
 }
-
 @media (max-width: 360px) {
   .container { padding: 0 14px; }
   .hero h1 { font-size: 1.7rem; }
   .tab-btn { padding: 8px 14px; font-size: .78rem; }
+  .trust-number { font-size: 1.6rem; }
+  .trust-plus { font-size: 1.2rem; }
 }
