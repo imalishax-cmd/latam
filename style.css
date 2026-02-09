@@ -219,7 +219,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 120px 0 80px;
+  padding-top: 120px;
+  padding-bottom: 80px;
   max-width: 700px;
 }
 
@@ -1007,8 +1008,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .nav-links a { color: rgba(255,255,255,.85) !important; font-size: 1.05rem; }
   .nav-cta { text-align: center; margin-top: 12px; }
 
-  .hero-content { padding: 140px 0 100px; }
+  .hero-content { padding-top: 130px; padding-bottom: 90px; }
   .hero h1 { font-size: 2.2rem; }
+  .hero-desc { font-size: 1rem; }
   .hero-scroll { display: none; }
 
   .trust-divider { display: none; }
@@ -1036,11 +1038,25 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 
 @media (max-width: 480px) {
+  .container { padding: 0 18px; }
+  .hero h1 { font-size: 1.9rem; }
+  .hero-tag { font-size: .7rem; letter-spacing: 2px; padding: 5px 12px; }
+  .hero-desc { font-size: .95rem; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; }
   .product-tabs { gap: 6px; }
   .tab-btn { padding: 10px 18px; font-size: .82rem; }
   .products-grid { grid-template-columns: 1fr; }
   .section-heading { font-size: 1.75rem; }
+  .section-desc { font-size: .95rem; }
   .modal-checks { flex-direction: column; gap: 10px; }
+  .cta-content h2 { font-size: 1.6rem; }
+  .trust-number { font-size: 2rem; }
+  .trust-plus { font-size: 1.5rem; }
+}
+
+@media (max-width: 360px) {
+  .container { padding: 0 14px; }
+  .hero h1 { font-size: 1.7rem; }
+  .tab-btn { padding: 8px 14px; font-size: .78rem; }
 }

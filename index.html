@@ -100,11 +100,6 @@
           <h2 class="section-heading">Connecting Latin American Agriculture with the World</h2>
           <p>For over a decade, <strong>Latam Agropartners</strong> has been a trusted bridge between Latin America's rich agricultural regions and global markets. We specialize in wholesale sourcing and export of premium grains, legumes, coffee, cocoa, and beef products.</p>
           <p>Our deep-rooted relationships with producers across Argentina, Brazil, Colombia, Bolivia, and other LATAM countries allow us to offer competitive pricing, consistent quality, and reliable supply chains.</p>
-          <div class="about-legal">
-            <strong>LATAGRO LLC</strong><br>
-            8 The Green, STE B<br>
-            Dover, DE 19901, United States
-          </div>
         </div>
       </div>
     </div>
@@ -121,7 +116,8 @@
 
       <!-- Category Tabs -->
       <div class="product-tabs animate-up">
-        <button class="tab-btn active" data-category="grains">Grains &amp; Cereals</button>
+        <button class="tab-btn active" data-category="featured">Featured</button>
+        <button class="tab-btn" data-category="grains">Grains &amp; Cereals</button>
         <button class="tab-btn" data-category="legumes">Legumes &amp; Seeds</button>
         <button class="tab-btn" data-category="coffee">Coffee &amp; Cocoa</button>
         <button class="tab-btn" data-category="meat">Beef Products</button>
@@ -130,8 +126,64 @@
       <!-- Products Grid -->
       <div class="products-grid" id="productsGrid">
 
-        <!-- === GRAINS === -->
-        <div class="product-card animate-up" data-category="grains">
+        <!-- === FEATURED (default view) === -->
+        <div class="product-card animate-up" data-category="featured coffee">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1447933601403-56dc2df6e3e6?auto=format&fit=crop&w=600&q=80')">
+            <span class="product-badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <h3>Green Coffee Beans</h3>
+            <p>Arabica and Robusta green beans from Brazil and Colombia.</p>
+            <button class="btn btn-product" onclick="openQuote('Green Coffee Beans')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="featured legumes">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1515543904823-4873b9af2a3f?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Chickpeas</h3>
+            <p>Premium caliber chickpeas, ideal for food processing and retail.</p>
+            <button class="btn btn-product" onclick="openQuote('Chickpeas')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="featured coffee">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1599574641764-18888ca74502?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Cocoa Beans</h3>
+            <p>Fine-flavor and bulk cocoa beans from LATAM origins.</p>
+            <button class="btn btn-product" onclick="openQuote('Cocoa Beans')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="featured legumes">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1604244491370-4e13e2e0feee?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Chia Seeds</h3>
+            <p>Organic and conventional chia seeds from Argentina and Bolivia.</p>
+            <button class="btn btn-product" onclick="openQuote('Chia Seeds')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="featured legumes">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Sesame Seeds</h3>
+            <p>White and black sesame seeds for culinary and oil production.</p>
+            <button class="btn btn-product" onclick="openQuote('Sesame Seeds')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="featured legumes">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1551462147-ff29053bfc14?auto=format&fit=crop&w=600&q=80')"></div>
+          <div class="product-info">
+            <h3>Beans</h3>
+            <p>Multiple varieties — kidney, black, pinto, and more.</p>
+            <button class="btn btn-product" onclick="openQuote('Beans (various)')">Request Quote</button>
+          </div>
+        </div>
+
+        <div class="product-card animate-up" data-category="featured grains">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1599709877852-d30ad2bd43f1?auto=format&fit=crop&w=600&q=80')">
             <span class="product-badge">Top Export</span>
           </div>
@@ -142,6 +194,18 @@
           </div>
         </div>
 
+        <div class="product-card animate-up" data-category="featured meat">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1588347818036-558601350947?auto=format&fit=crop&w=600&q=80')">
+            <span class="product-badge">Premium</span>
+          </div>
+          <div class="product-info">
+            <h3>Fresh / Chilled Beef</h3>
+            <p>Grass-fed premium beef cuts — fresh and chilled for demanding markets.</p>
+            <button class="btn btn-product" onclick="openQuote('Fresh / Chilled Beef')">Request Quote</button>
+          </div>
+        </div>
+
+        <!-- === GRAINS (not featured) === -->
         <div class="product-card animate-up" data-category="grains">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
@@ -196,26 +260,8 @@
           </div>
         </div>
 
-        <!-- === LEGUMES & SEEDS === -->
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1551462147-ff29053bfc14?auto=format&fit=crop&w=600&q=80')"></div>
-          <div class="product-info">
-            <h3>Beans</h3>
-            <p>Multiple varieties — kidney, black, pinto, and more.</p>
-            <button class="btn btn-product" onclick="openQuote('Beans (various)')">Request Quote</button>
-          </div>
-        </div>
-
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1515543904823-4873b9af2a3f?auto=format&fit=crop&w=600&q=80')"></div>
-          <div class="product-info">
-            <h3>Chickpeas</h3>
-            <p>Premium caliber chickpeas, ideal for food processing and retail.</p>
-            <button class="btn btn-product" onclick="openQuote('Chickpeas')">Request Quote</button>
-          </div>
-        </div>
-
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
+        <!-- === LEGUMES (not featured) === -->
+        <div class="product-card animate-up" data-category="legumes">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1587735243615-c03f25aaff15?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Green Peas</h3>
@@ -224,7 +270,7 @@
           </div>
         </div>
 
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
+        <div class="product-card animate-up" data-category="legumes">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Lentils</h3>
@@ -233,7 +279,7 @@
           </div>
         </div>
 
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
+        <div class="product-card animate-up" data-category="legumes">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1609501676725-7186f017a4b7?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Lupins</h3>
@@ -242,7 +288,7 @@
           </div>
         </div>
 
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
+        <div class="product-card animate-up" data-category="legumes">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1564894809611-1742fc40ed80?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Lima Beans</h3>
@@ -251,16 +297,7 @@
           </div>
         </div>
 
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1511690743698-d9d18f7e20b1?auto=format&fit=crop&w=600&q=80')"></div>
-          <div class="product-info">
-            <h3>Chia Seeds</h3>
-            <p>Organic and conventional chia seeds from Argentina and Bolivia.</p>
-            <button class="btn btn-product" onclick="openQuote('Chia Seeds')">Request Quote</button>
-          </div>
-        </div>
-
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
+        <div class="product-card animate-up" data-category="legumes">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Flax Seeds</h3>
@@ -269,16 +306,7 @@
           </div>
         </div>
 
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1541990931902-a9da124a1a15?auto=format&fit=crop&w=600&q=80')"></div>
-          <div class="product-info">
-            <h3>Sesame Seeds</h3>
-            <p>White and black sesame seeds for culinary and oil production.</p>
-            <button class="btn btn-product" onclick="openQuote('Sesame Seeds')">Request Quote</button>
-          </div>
-        </div>
-
-        <div class="product-card animate-up" data-category="legumes" style="display:none">
+        <div class="product-card animate-up" data-category="legumes">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1622484212850-eb596d769edc?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Pumpkin Seeds</h3>
@@ -287,19 +315,8 @@
           </div>
         </div>
 
-        <!-- === COFFEE & COCOA === -->
-        <div class="product-card animate-up" data-category="coffee" style="display:none">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=600&q=80')">
-            <span class="product-badge">Popular</span>
-          </div>
-          <div class="product-info">
-            <h3>Green Coffee Beans</h3>
-            <p>Arabica and Robusta green beans from Brazil and Colombia.</p>
-            <button class="btn btn-product" onclick="openQuote('Green Coffee Beans')">Request Quote</button>
-          </div>
-        </div>
-
-        <div class="product-card animate-up" data-category="coffee" style="display:none">
+        <!-- === COFFEE & COCOA (not featured) === -->
+        <div class="product-card animate-up" data-category="coffee">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Roasted / Ground Coffee</h3>
@@ -308,16 +325,7 @@
           </div>
         </div>
 
-        <div class="product-card animate-up" data-category="coffee" style="display:none">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1610611424854-5e07b4937185?auto=format&fit=crop&w=600&q=80')"></div>
-          <div class="product-info">
-            <h3>Cocoa Beans</h3>
-            <p>Fine-flavor and bulk cocoa beans from LATAM origins.</p>
-            <button class="btn btn-product" onclick="openQuote('Cocoa Beans')">Request Quote</button>
-          </div>
-        </div>
-
-        <div class="product-card animate-up" data-category="coffee" style="display:none">
+        <div class="product-card animate-up" data-category="coffee">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Cocoa Powder / Butter</h3>
@@ -326,19 +334,8 @@
           </div>
         </div>
 
-        <!-- === BEEF === -->
-        <div class="product-card animate-up" data-category="meat" style="display:none">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1588347818036-558601350947?auto=format&fit=crop&w=600&q=80')">
-            <span class="product-badge">Premium</span>
-          </div>
-          <div class="product-info">
-            <h3>Fresh / Chilled Beef</h3>
-            <p>Grass-fed premium beef cuts — fresh and chilled for demanding markets.</p>
-            <button class="btn btn-product" onclick="openQuote('Fresh / Chilled Beef')">Request Quote</button>
-          </div>
-        </div>
-
-        <div class="product-card animate-up" data-category="meat" style="display:none">
+        <!-- === BEEF (not featured) === -->
+        <div class="product-card animate-up" data-category="meat">
           <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80')"></div>
           <div class="product-info">
             <h3>Frozen Beef</h3>
@@ -434,15 +431,6 @@
               <div>
                 <strong>Phone / WhatsApp</strong>
                 <a href="https://wa.me/5491162045579">+54 9 11 6204-5579</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <strong>Office</strong>
-                <span>8 The Green, STE B<br>Dover, DE 19901, USA</span>
               </div>
             </div>
           </div>
@@ -543,12 +531,11 @@
             <h4>Contact</h4>
             <a href="mailto:agropartnerslatam@gmail.com">agropartnerslatam@gmail.com</a>
             <a href="https://wa.me/5491162045579">+54 9 11 6204-5579</a>
-            <a href="#">Dover, DE, USA</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Latam Agropartners (LATAGRO LLC). All rights reserved.</p>
+        <p>&copy; 2026 Latam Agropartners. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -633,12 +620,14 @@
     function switchTab(category) {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.category === category));
       document.querySelectorAll('.product-card').forEach(card => {
-        card.style.display = card.dataset.category === category ? '' : 'none';
+        const cats = card.dataset.category.split(' ');
+        card.style.display = cats.includes(category) ? '' : 'none';
       });
     }
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', () => switchTab(btn.dataset.category));
     });
+    switchTab('featured');
 
     /* --- Quote modal --- */
     function openQuote(product) {
